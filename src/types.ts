@@ -27,7 +27,6 @@ export interface ShowcaseSite {
   url: string;
 }
 
-
 export interface ServiceItem {
   description: string;
   icon: string;

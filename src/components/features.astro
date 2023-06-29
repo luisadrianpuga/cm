@@ -1,44 +1,48 @@
 ---
 import { Icon } from "astro-icon";
 import ContentSection from "~/components/content-section.astro";
-import type { ServiceItem } from "~/types";  // You would have to create a new type in ~/types
+import type { ServiceItem } from "~/types"; // You would have to create a new type in ~/types
 
 const services: Array<ServiceItem> = [
   {
     title: "Crea Tu Hogar Digital",
     description:
       "Crearemos un espacio en línea atractivo que muestre tu trabajo y atraiga a los clientes.",
-    example: "Diseño y desarrollo de un sitio web personalizado con galerías de fotos de tus proyectos.",
-    icon: "mdi:web",  // Adjust to the actual icon you'd like to use
+    example:
+      "Diseño y desarrollo de un sitio web personalizado con galerías de fotos de tus proyectos.",
+    icon: "mdi:web", // Adjust to the actual icon you'd like to use
   },
   {
     title: "Revive Tu Sitio Web",
-    description: 
+    description:
       "Inyectaremos vida y energía en tu sitio web con un diseño fresco y atractivo, basado en principios de diseño centrado en el usuario.",
     example: "Mejora del diseño y funcionalidad de tu sitio web actual.",
-    icon: "mdi:refresh",  // Adjust to the actual icon you'd like to use
+    icon: "mdi:refresh", // Adjust to the actual icon you'd like to use
   },
   {
     title: "Abre Tu Tienda 24/7",
     description:
       "Convertiremos tu sitio web en una plataforma de comercio electrónico abierta las 24 horas, garantizando que tus clientes puedan comprar tus productos en cualquier momento y lugar.",
-    example: "Integración de un sistema de comercio electrónico en tu sitio web.",
-    icon: "mdi:store-24-hour",  // Adjust to the actual icon you'd like to use
+    example:
+      "Integración de un sistema de comercio electrónico en tu sitio web.",
+    icon: "mdi:store-24-hour", // Adjust to the actual icon you'd like to use
   },
   {
     title: "Automatiza lo Mundano",
     description:
       "Nos encargaremos de las tareas monótonas y repetitivas a través de la automatización, para que puedas concentrarte en las cosas que realmente importan.",
-    example: "Creación de scripts de Python para automatizar tareas de entrada de datos.",
-    icon: "mdi:robot",  // Adjust to the actual icon you'd like to use
+    example:
+      "Creación de scripts de Python para automatizar tareas de entrada de datos.",
+    icon: "mdi:robot", // Adjust to the actual icon you'd like to use
   },
 ];
 ---
 
 <ContentSection title="Servicios" id="services">
   <Fragment slot="lead">
-    En ContigoMaryland, <span class="text-primary">amplificamos tu oficio</span>.
-    Nos encargamos de la tecnología, liberándote para que te concentres en tu comercio.
+    En ContigoMaryland, <span class="text-primary">amplificamos tu oficio</span
+    >. Nos encargamos de la tecnología, liberándote para que te concentres en tu
+    comercio.
   </Fragment>
   <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     {
